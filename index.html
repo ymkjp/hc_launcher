@@ -2,12 +2,22 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Hello World!</title>
+  <title>HipChat Launcher</title>
 </head>
-<body>
-<h1>Hello World!</h1>
-We are using node <script>document.write(process.versions.node)</script>,
-Chrome <script>document.write(process.versions.chrome)</script>,
-and Electron <script>document.write(process.versions.electron)</script>.
+<body style="overflow:hidden;">
+<!--<webview id="webview"-->
+<!--preload="./index.js"-->
+<!--src="https://atlassian.hipchat.com/chat"-->
+<!--style="position:absolute;width:100%;height:100%;"-->
+<!--&gt;</webview>-->
+<webview id="webview"
+src="https://atlassian.hipchat.com/chat"
+style="position:absolute;width:100%;height:100%;"
+></webview>
+<script>
+  (function(){
+    console.log(JSON.stringify(process.versions));
+  })();
+</script>
 </body>
 </html>
