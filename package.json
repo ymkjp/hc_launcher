@@ -1,5 +1,5 @@
 {
-  "name": "launcher",
+  "name": "hc_launcher",
   "version": "1.0.0",
   "description": "HipChat Launcher",
   "main": "main.js",
@@ -8,7 +8,7 @@
     "start": "electron ."
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "electron-prebuilt": "^1.4.10",
     "eslint": "^3.11.1",
